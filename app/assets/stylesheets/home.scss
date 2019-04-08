@@ -1,3 +1,54 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+    width: 85% !important;
+    font-family: 'Advent Pro';
+    font-weight: lighter;
+}
+.postes{
+    .card{
+        height: 300px;
+        box-shadow: none !important;
+        .line-card{
+            width: 100px;
+            height: 0px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(153, 151, 151);
+            border-radius: 30px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            position: relative;
+
+        }
+    }
+    .subtitle{
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: relative;
+    }
+    .postes-title{
+        display: inline-block;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: relative;
+
+        .title{
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .line{
+            display: inline-block;
+            width: 150px;
+            height: 0px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            border-radius: 30px;
+        }
+    }
+}
