@@ -14,6 +14,9 @@ $seconds-annimation: 1.5s;
     font-family: 'Advent Pro';
     font-weight: lighter;
     position: relative;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+        max-width: 100% !important;
+    }
     .carousel-inner{
         height: 600px !important;
     }
