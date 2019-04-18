@@ -3,6 +3,9 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1 maximum-scale=1", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.8.1/css/all.css", :integrity => "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf", :rel => "stylesheet"}/
+
+
     %title Metaling
     = csrf_meta_tags
     = csp_meta_tag
@@ -12,11 +15,13 @@
     %nav.navbar.navbar-light
       =link_to '/' do
         =image_tag 'logo.png', class: 'logo'
+      %button.d-inline-block.d-lg-none.btn-responsive{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+        %i.far.fa-envelope
+
       .options
         =active_link_to 'Postes', postes_path, active: :exclusive
         =active_link_to 'Maestranza', postes_path, active: :exclusive
         =active_link_to 'Industria', postes_path, active: :exclusive
-        -# %button.btn.d-none.d-lg-inline-block Contactanos
         %button.btn.d-none.d-lg-inline-block{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
           Contactanos
 
