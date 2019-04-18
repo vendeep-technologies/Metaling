@@ -1,20 +1,31 @@
 =render partial: 'carousel'
-.row
-	%ul#pills-tab.nav.nav-pills.mb-3.row.justify-content-around{:role => "tablist"}
-		%li.nav-item.col.col-12.col-xl-4.prueba
-			%a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"}
-				
-				.circle
-					=image_tag 'prueba.jpeg', class: 'image'
-		%li.nav-item.col.col-12.col-xl-4.prueba
-			%a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} 
-				-# .col.col-12.col-xl-4.prueba
-				.circle
-					=image_tag 'prueba.jpeg', class: 'image'
-		%li.nav-item.col.col-12.col-xl-4.prueba
-			%a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} 
-				-# .col.col-12.col-xl-4.prueba
-				.circle
-					=image_tag 'prueba.jpeg', class: 'image'
+-# .container	
+-# .triangle	
+.row.circle-section	
+	-# .col-12.subtitle
+	-# 	-# .line.large
+	-# 	-# .line.short
+	-# 	%h3 Titulo
+	-# 	-# .line.short
+	-# 	-# .line.large
 
-				
+	.col-12.col-lg-4.circle-sect
+		=link_to '/postes' , class: "circle" do		
+			%h4 Postes
+	.col-12.col-lg-4.circle-sect
+		=link_to '/postes' do	
+			.circle	
+				%h4 Postes	
+	.col-12.col-lg-4.circle-sect
+		=link_to '/postes' do		
+			.circle	
+				%h4 Postes
+.row.business
+	.col-12.col-lg-2.circle-sect
+	.col-12.col-lg-4.circle-sect
+		=image_tag 'logo.png' , class: 'logos'
+	.col-12.col-lg-4.circle-sect
+		=image_tag 'logo.png' , class: 'logos'
+	.col-12.col-lg-2.circle-sect
+
+=render partial: 'tabs'

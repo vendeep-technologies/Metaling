@@ -9,9 +9,54 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %nav.navbar.navbar-light.bg-light
+    %nav.navbar.navbar-light
       =link_to '/' do
         =image_tag 'logo.png', class: 'logo'
-    .container
-      = yield
+      .options
+        =active_link_to 'Postes', postes_path, active: :exclusive
+        =active_link_to 'Maestranza', postes_path, active: :exclusive
+        =active_link_to 'Industria', postes_path, active: :exclusive
+        -# %button.btn.d-none.d-lg-inline-block Contactanos
+        %button.btn.d-none.d-lg-inline-block{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+          Contactanos
+
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Contactanos
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            = form_tag contact_path do
+              .placeholder
+                %label
+              = text_field_tag :name, nil, placeholder: 'Nombre'
+              .placeholder
+                %label
+              = text_field_tag :email, nil, placeholder: 'Correo'
+              .placeholder
+                %label
+              = text_field_tag :cellphone, nil, placeholder: 'Celular'
+              .placeholder
+                %label
+              = text_area_tag :address, nil, placeholder: 'Mensaje'
+              .modal-footer
+                = submit_tag "Enviar", class: 'btn'
+                %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+    = yield
+    .footer.row
+      .col-12.col-lg-4
+        .info
+          =image_tag 'logo.png' , class: 'logo-footer'
+          %p info@fize.com
+      .col-12.col-lg-4
+        .term-cond
+          %p Metaling Ltda. © 2015 / Camino Las Higueras Parcela 50 Lote 2, Lampa,
+          %p Santiago, Región Metropolitana. 
+      .col-s12.col-lg-4
+        .contact
+          %p Diseno grafico y web
+          = image_tag 'vendeep.png' , class: 'logo-vendeep'
+    
     

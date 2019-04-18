@@ -1,0 +1,77 @@
+$background-footer: #042e40;
+.footer{
+//   margin: 0px;
+  background-color: $background-footer;
+//   height: 120px;
+margin: unset !important;
+  width: 100%;
+  color: white;
+  .info{
+    // display: flex;
+    margin-left: 30px;
+    .logo-footer{
+      width: auto;
+      height: 61px;
+      margin-top: 20px
+    }
+    p{
+      margin-left: 10px;
+    }
+  }
+  p{
+    text-align: center;
+  }
+  .col{
+    height: 100%
+  }
+  .contact{
+    width: 100%;
+    margin-right: 30px;
+    img{
+      margin: 10px;
+      float: right;
+      display: inline-block;
+      width: 25px;
+      height: auto;
+    }
+  }
+  .term-cond{
+    a{
+      color: white;
+    }
+    width: 100%;
+  }
+
+  @media screen and (max-width: 991px) and (min-width: 50px) {
+  height: unset;
+  .col{
+    display: unset;
+    margin: 15px;
+  }
+  .info{
+    margin: unset;
+    display: block !important;
+    p{
+      display: block;
+      margin: unset;
+    }
+    .logo-footer{
+      width: 133px;
+      height: auto;
+      margin: unset;
+    }
+  }
+    .contact{
+      margin-right: unset;
+      img{
+        float: unset;
+        width: 30px;
+        height: auto;
+      }
+    }
+  }
+  .logo-vendeep{
+      width: 100px !important;
+      height: auto !important;
+  }
+}

@@ -1,0 +1,16 @@
+.tabs-section
+    %ul#myTab.nav.nav-tabs{:role => "tablist"}
+        %li.nav-item
+            %a#home-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#home", :role => "tab"} Mision
+        %li.nav-item
+            %a#profile-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#profile", :role => "tab"} Vision
+        %li.nav-item
+            %a#history-tab.nav-link{"aria-controls" => "history", "aria-selected" => "false", "data-toggle" => "tab", :href => "#history", :role => "tab"} Historia    
+    #myTabContent.tab-content
+        #home.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"} 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eligendi tempore dolorem perferendis similique, placeat nisi voluptatibus, minima cupiditate reprehenderit earum soluta dolore repellendus suscipit obcaecati laborum at? Repudiandae, sed.
+        #profile.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"} 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, alias? Corporis fugiat quibusdam ex, dicta deserunt libero incidunt consequuntur hic exercitationem soluta debitis pariatur nulla accusamus necessitatibus recusandae temporibus maxime. 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel optio, unde eos blanditiis corrupti id autem rem fugiat debitis natus! Iure architecto voluptas perferendis odit praesentium velit iusto omnis obcaecati?
+        #history.tab-pane.fade{"aria-labelledby" => "history-tab", :role => "tabpanel"} 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, alias? Corporis fugiat quibusdam ex, dicta deserunt libero incidunt consequuntur hic exercitationem soluta debitis pariatur nulla accusamus necessitatibus recusandae temporibus maxime. 
