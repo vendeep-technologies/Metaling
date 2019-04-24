@@ -38,8 +38,8 @@ $seconds-annimation: 1.5s;
                 position: relative;
             }  
         }
-        @media screen and (max-width: 991px) and (min-width: 50px) {
-            .soldador{
+        .soldador{
+            @media screen and (max-width: 991px) and (min-width: 50px) {
                 right: 57%;
             }
         }
