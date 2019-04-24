@@ -34,9 +34,14 @@ $seconds-annimation: 1.5s;
             @media screen and (max-width: 991px) and (min-width: 50px) {
                 height: 400px;
                 width: unset;
-                right: 70%;
+                right: 75%;
                 position: relative;
             }  
+        }
+        @media screen and (max-width: 991px) and (min-width: 50px) {
+            .soldador{
+                right: 57%;
+            }
         }
     }
 
