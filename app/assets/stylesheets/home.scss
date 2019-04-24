@@ -17,6 +17,7 @@ $seconds-annimation: 1.5s;
   .home-image{
         width: 100%;
         height: auto;
+        object-fit: inherit;
   }
 // .container{
 //     max-width: 90% !important;
@@ -29,8 +30,12 @@ $seconds-annimation: 1.5s;
     .carousel-inner{
         width: 100%;
         img{
+            height: 560px;
             @media screen and (max-width: 991px) and (min-width: 50px) {
                 height: 400px;
+                width: unset;
+                right: 70%;
+                position: relative;
             }  
         }
     }
@@ -215,7 +220,10 @@ textarea{
     transform: translate(-50%, 0%);
 }
 .bd-example{
+    margin-top: 80px;
+    display: inline-block;
     @media screen and (max-width: 991px) and (min-width: 50px) {
         margin-top: 120px;
+        width: 100%;
     }
 }

@@ -1,4 +1,12 @@
+.section-postes{
+    padding-top: 120px;
+    .title-psotes{
+        text-align: center;
+    }
+    
+}
 .postes{
+    overflow-x: hidden;
     .c-card{
         padding: unset;
     }
