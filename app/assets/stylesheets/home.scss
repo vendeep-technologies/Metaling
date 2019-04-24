@@ -28,6 +28,11 @@ $seconds-annimation: 1.5s;
 //     }
     .carousel-inner{
         width: 100%;
+        img{
+            @media screen and (max-width: 991px) and (min-width: 50px) {
+                height: 400px;
+            }  
+        }
     }
 
     .esquina{
@@ -42,11 +47,17 @@ $seconds-annimation: 1.5s;
         width: 100%;
         margin: unset !important;
         // background-color: #6ec6b8;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+            height: auto;
+        }
         
     }	
     .circle-sect{
         padding: 0px !important;
         width: 100%;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+            height: 250px;
+        }
     }
     .circle{
         position: absolute;
@@ -69,10 +80,18 @@ $seconds-annimation: 1.5s;
             color: white;
             font-weight: bold;
         }
+        @media screen and (max-width: 991px) and (min-width: 50px){
+            height: 170px;
+            width: 170px;
+        }
     }
     .circle:hover {
         width: 280px;
         height: 280px;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+            height: 220px;
+            width: 220px;
+        }
     } 
     // .active{
     //     background-color: transparent !important;
@@ -120,6 +139,10 @@ $seconds-annimation: 1.5s;
         border-bottom-color: white;
         border-left-width: 99vw;
         border-right-width: 0vw;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+            width: 100%;
+            bottom: -1px;
+        }
       }
     .subtitle{
         // display: inline-block !important;
@@ -162,4 +185,9 @@ textarea{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+.bd-example{
+    @media screen and (max-width: 991px) and (min-width: 50px) {
+        margin-top: 120px;
+    }
 }
